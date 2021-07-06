@@ -53,4 +53,4 @@ def merge(lists):
 
 # Preview
 
-![]()
+![](https://github.com/mglacayo07/DailyCodingTip1/blob/main/preview.png)
