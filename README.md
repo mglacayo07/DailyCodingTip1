@@ -2,7 +2,7 @@
 
 The question we'll work through is the following: return a new sorted merged list from K sorted lists, each with size N. Before we move on any further, you should take some time to think about the solution!
 
-1. First, go through an example. This buys time, makes sure you understand the problem, and lets you gain some intuition for the problem. For example, if we had [[10, 15, 30], [12, 15, 20], [17, 20, 32]], the result should be [10, 12, 15, 15, 17, 20, 20, 30, 32].
+1. First, go through an example. This buys time, makes sure you understand the problem, and lets you gain some intuition for the problem. For example, if we had `[[10, 15, 30], [12, 15, 20], [17, 20, 32]]`, the result should be `[10, 12, 15, 15, 17, 20, 20, 30, 32]`.
 
 2. Next, give any solution you can think of (even if it's brute force). It seems obvious that if we just flattened the lists and sorted it, we would get the answer we want. The time complexity for that would be O(KN log KN), since we have K * N total elements.
 
@@ -39,11 +39,11 @@ def merge(lists):
 
 5. Think of test cases and run them through your interviewer. This shows that you're willing to test your code and ensure it's robust. I like to think of happy cases and edge cases. Our original example would be a happy case. Edge cases might be.
 
-* lists is [].
-* lists only contains empty lists: [[], [], []].
-* lists contains empty lists and non-empty lists: [[], [1], [1,2]].
-* lists contains one list with one element: [[1]].
-* lists contains lists of varying size: [[1], [1, 3, 5], [1, 10, 20, 30, 40]].
+* lists is `[]`.
+* lists only contains empty lists: `[[], [], []]`.
+* lists contains empty lists and non-empty lists: `[[], [1], [1,2]]`.
+* lists contains one list with one element: `[[1]]`.
+* lists contains lists of varying size: `[[1], [1, 3, 5], [1, 10, 20, 30, 40]]`.
 6. Finally, the interviewer should ask some follow-up questions. One common question is: what other solutions are there? There's actually another relatively simple solution that would use a divide-and-conquer strategy. We could recursively merge each half of the lists and then combine the two lists. This would have the same asymptotic complexities but would require more "real" memory and time.
 
 
